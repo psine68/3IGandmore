@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3IG and more</title>
+<meta name="description" content="Все наши аккаунты: новости, смешные видео, мультики.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
+<!--
+  Общая ссылка для профилей Instagram — https://<ник>.github.io/3IGandmore/
+  (бесплатно, GitHub Pages; как выложить — docs/LINK_PAGE.md). Поменять ссылку —
+  правишь <a href="…"> ниже и заново загружаешь файл в репозиторий на github.com.
+  Без призывов и выгод: с 01.09.2025 реклама в Instagram в РФ запрещена.
+-->
+<style>
+  :root {
+    --bg: #111216;
+    --card: #1b1d23;
+    --card-hover: #23262e;
+    --text: #ffffff;
+    --muted: #a3a7b3;
+    --accent: #e53935;
+    --border: #2a2d36;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f4ee;
+      --card: #ffffff;
+      --card-hover: #efece4;
+      --text: #16161a;
+      --muted: #5e6170;
+      --accent: #d62828;
+      --border: #e2ded3;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px 32px;
+  }
+  main { width: 100%; max-width: 440px; }
+  .bar { width: 64px; height: 6px; background: var(--accent); border-radius: 3px; }
+  h1 { font-weight: 800; font-size: 30px; line-height: 1.15; margin: 18px 0 8px; }
+  .lead { color: var(--muted); font-weight: 500; font-size: 15px; line-height: 1.5; margin: 0 0 28px; }
+  h2 {
+    font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--muted); margin: 26px 0 10px;
+  }
+  a.link {
+    display: flex; align-items: center; gap: 14px;
+    padding: 16px 18px; margin-bottom: 10px;
+    background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+    color: var(--text); text-decoration: none;
+    transition: background .15s;
+  }
+  a.link:hover, a.link:focus-visible { background: var(--card-hover); }
+  a.link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .icon {
+    flex: none; width: 40px; height: 40px; border-radius: 10px;
+    display: grid; place-items: center;
+    background: var(--accent); color: #fff; font-weight: 800; font-size: 13px;
+  }
+  .text { display: flex; flex-direction: column; min-width: 0; }
+  .title { font-weight: 600; font-size: 16px; }
+  .sub { color: var(--muted); font-size: 13px; font-weight: 500; margin-top: 3px; }
+  footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 36px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="bar"></div>
+  <h1>Приветствую!</h1>
+  <p class="lead">Здесь все наши аккаунты: новости, смешные видео и мультики.</p>
+
+  <h2>Новости</h2>
+  <a class="link" href="https://www.instagram.com/svodka.reels/" target="_blank" rel="noopener">
+    <span class="icon">IG</span>
+    <span class="text">
+      <span class="title">@svodka.reels</span>
+      <span class="sub">Новости в Instagram</span>
+    </span>
+  </a>
+  <a class="link" href="https://max.ru/id744610379991_biz" target="_blank" rel="noopener">
+    <span class="icon">MAX</span>
+    <span class="text">
+      <span class="title">Почти настоящее СМИ</span>
+      <span class="sub">Новости в мессенджере MAX</span>
+    </span>
+  </a>
+
+  <h2>Смешные видео</h2>
+  <a class="link" href="https://www.instagram.com/videofarm.hub/" target="_blank" rel="noopener">
+    <span class="icon">IG</span>
+    <span class="text">
+      <span class="title">@videofarm.hub</span>
+      <span class="sub">Смешные видео в Instagram</span>
+    </span>
+  </a>
+
+  <h2>Мультики</h2>
+  <a class="link" href="https://www.instagram.com/mult.bug/" target="_blank" rel="noopener">
+    <span class="icon">IG</span>
+    <span class="text">
+      <span class="title">@mult.bug</span>
+      <span class="sub">Мультики в Instagram</span>
+    </span>
+  </a>
+
+  <h2>Связь</h2>
+  <a class="link" href="https://t.me/psine68" target="_blank" rel="noopener">
+    <span class="icon">TG</span>
+    <span class="text">
+      <span class="title">@psine68</span>
+      <span class="sub">Написать в Telegram</span>
+    </span>
+  </a>
+
+  <footer>3IG and more</footer>
+</main>
+</body>
+</html>
